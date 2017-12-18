@@ -31,11 +31,12 @@ def get_random_response():
                  "Wow",
                  "Ya think so?",
                  "You gotta be joking",
-                 "You should have been aborted",
+                 "That's awesome buddy",
                  "Dude, sick.",
                  "You ever eaten squirrel?",
                  "Who's yo daddy?",
-                 "Huh?"
+                 "Huh?",
+                 "yee yee bo!",
                  "Let's make this country great again buddy"
                  ]
 
@@ -83,7 +84,7 @@ def play():
     while talking:
         statement = input(">> ")
 
-        if statement == "Goodbye":
+        if statement.lower() == "goodbye" or statement.lower() == "bye":
             talking = False
         else:
             response = get_response(statement)
